@@ -56,7 +56,7 @@ function displayWeather(response) {
 
   h1.innerHTML = response.data.name;
   temperature.innerHTML = `${forecastResult} ºC`;
-  humidity.innerHTML = `${humidityValue} %`;
+  humidity.innerHTML = `Humidity: ${humidityValue} %`;
   wind.innerHTML = `Wind: ${windValue} m/s`;
   description.innerHTML = `Description: ${descriptionText}`;
 }
