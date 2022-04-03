@@ -1,57 +1,59 @@
 small {
-    font-size: 10px;
-    font-family: "Catamaran", sans-serif;
-  }
-  h1 {
-    font-size: 30px;
-    padding-top: 15px;
-    font-family: "Catamaran", sans-serif;
-  }
-  h2 {
-    font-size: 25px;
-    font-family: "Catamaran", sans-serif;
-  }
-  h3 {
-    font-size: 20px;
-    font-family: "Catamaran", sans-serif;
-  }
-  h5 {
-    font-size: 18px;
-    font-family: "Catamaran", sans-serif;
-  }
-  footer {
-    text-align: center;
-    border: 20px;
-    padding-bottom: 10px;
-  }
-  .container {
-    padding: 20px;
-    font-size: medium;
-  }
-  .card {
-    word-wrap: normal;
-    padding: 15px;
-    border-radius: 8px;
-  }
-  .high {
-    font-weight: bolder;
-    font-family: "Catamaran", sans-serif;
-  }
-  .emoji {
-    font-size: 50px;
-    padding: 5px;
-  }
-  .weekdays {
-    text-align: center;
-  }
-  .city {
-    font-size: x-large;
-  }
-  .forecast {
-    font-size: 40px;
-  }
-  .time-zone {
-    font-weight: lighter;
-    font-style: oblique;
-  }
-  
+  font-size: 10px;
+  font-family: "Catamaran", sans-serif;
+}
+h1 {
+  font-size: 30px;
+  padding-top: 15px;
+  font-family: "Catamaran", sans-serif;
+}
+h2 {
+  font-size: 25px;
+  font-family: "Catamaran", sans-serif;
+}
+h3 {
+  font-size: 20px;
+  font-family: "Catamaran", sans-serif;
+}
+h5 {
+  font-size: 18px;
+  font-family: "Catamaran", sans-serif;
+}
+footer {
+  text-align: center;
+  border: 20px;
+  padding-bottom: 10px;
+}
+.container {
+  padding: 20px;
+  font-size: medium;
+}
+.card {
+  word-wrap: normal;
+  padding: 15px;
+  border-radius: 8px;
+}
+.high {
+  font-weight: bolder;
+  font-family: "Catamaran", sans-serif;
+}
+.emoji {
+  font-size: 50px;
+  padding: 5px;
+}
+.conditions {
+  font-size: 14px;
+}
+.weekdays {
+  text-align: center;
+}
+.city {
+  font-size: x-large;
+}
+.forecast {
+  font-size: 40px;
+}
+.time-zone {
+  font-weight: lighter;
+  font-style: oblique;
+}
