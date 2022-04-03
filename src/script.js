@@ -71,8 +71,8 @@ function searchCity(city) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  let city = document.querySelector("#current-city").value;
-  searchCity(city);
+  let city = document.querySelector("#current-city");
+  searchCity(city.value);
 }
 
 function searchLocation(position) {
