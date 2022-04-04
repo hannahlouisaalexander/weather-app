@@ -33,6 +33,17 @@ footer {
   padding: 15px;
   border-radius: 8px;
 }
+
+.weather-temperature .active {
+  color: black;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+  
+
 .high {
   font-weight: bolder;
   font-family: "Catamaran", sans-serif;
