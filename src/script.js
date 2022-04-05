@@ -94,18 +94,18 @@ searchForm.addEventListener("click", handleSubmit);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-// fahrenheit & celcius 
+// fahrenheit & celcius
 
 function getFahrenheitTemperature(event) {
   event.preventDefault();
-  let temperature = document.querySelector("#temperature")
+  let temperature = document.querySelector("#temperature");
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
   temperature.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-function getCelciusTemperature(event){
+function getCelciusTemperature(event) {
   event.preventDefault();
   let temperature = document.querySelector("#temperature");
   celsiusLink.classList.add("active");
