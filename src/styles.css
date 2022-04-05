@@ -46,7 +46,7 @@ footer {
   padding: 5px;
 }
 .conditions {
-  font-size: 14px;
+  font-size: medium;
 }
 .weekdays {
   text-align: center;
@@ -55,7 +55,9 @@ footer {
   font-size: x-large;
 }
 .forecast {
-  font-size: 40px;
+  font-size: 52px;
+  font-weight: oblique;
+  padding-right: 8px;
 }
 .time-zone {
   font-weight: lighter;
