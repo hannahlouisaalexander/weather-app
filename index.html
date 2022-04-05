@@ -11,100 +11,114 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/styles.css" />
     <title>Weather</title>
   </head>
   <body>
     <div class="container">
-       <form class= "search-form" id="search-form">
       <div class="card">
-        <div class="card-body"> 
-      <div class="form-group">
-<input type="search" id="current-city" class="form-control "
-placeholder="Search for city..." autocomplete="off" />
-</div>
-<br>
- <input type="submit" class="btn btn-info" value="Search" id= "city-search-button">
-    <input type="submit" class="btn btn-secondary" value="Current Location" id="current-location-button"
-            
-          >
+        <div class="card-body">
+          <form class="search-form" id="search-form">
+            <div class="form-group">
+              <input
+                type="search"
+                id="current-city"
+                class="form-control"
+                placeholder="Search for city..."
+                autocomplete="off"
+              />
+            </div>
+            <br />
+            <input
+              type="submit"
+              class="btn btn-info"
+              value="Search"
+              id="city-search-button"
+            />
+            <input
+              type="submit"
+              class="btn btn-secondary"
+              value="Current Location"
+              id="current-location-button"
+            />
+          </form>
+        </div>
 
-    </div></form>
-    
-    <br>
-    <div class="weather-temperature">
-    <div class="card">
-  <div class="card-body">
-    <span class ="city" id="city">
-    </span><br>
-    <span id="current-day"></span> <span id="current-time"></span><class class="time-zone"> (AEST)</class><br>
-    <span class="conditions" id="humidity"> </span><br>
-    <span class="conditions" id="wind"> </span><br>
-    <span class="conditions" id="description"></span><br>
-     <img src="" alt="Clear" id="icon" class="float-left" />
-    <span class="forecast" id="temperature"> </span><a href="#" id="celcius-link" class="active"> ºC</a> | <a href="#" id="fahrenheit-link">ºF </a><br>
-   </div>
-</div>
-</div>
+        <br />
+        <div class="weather-temperature">
+          <div class="card">
+            <div class="card-body">
+              <span class="city" id="city"> </span><br />
+              <span id="current-day"></span> <span id="current-time"></span
+              ><class class="time-zone"> (AEST)</class><br />
+              <span class="conditions" id="humidity"> </span><br />
+              <span class="conditions" id="wind"> </span><br />
+              <span class="conditions" id="description"></span><br />
+              <img src="" alt="Clear" id="icon" class="float-left" />
+              <span class="forecast" id="temperature"> </span
+              ><a href="#" id="celcius-link" class="active"> ºC</a> |
+              <a href="#" id="fahrenheit-link">ºF </a><br />
+            </div>
+          </div>
+        </div>
 
- <hr>
+        <hr />
 
- <div class="weekdays">
-<div class="row">
-  <div class="col">
-      Monday
-    <div class="emoji"> ⛅️
+        <div class="weekdays">
+          <div class="row">
+            <div class="col">
+              Monday
+              <div class="emoji">⛅️</div>
+              <div class="high">21°C</div>
+              18°C
+            </div>
+
+            <div class="col">
+              Tuesday
+              <div class="emoji">☀️</div>
+              <div class="high">26°C</div>
+              22°C
+            </div>
+
+            <div class="col">
+              Wednesday
+              <div class="emoji">☀️</div>
+              <div class="high">27°C</div>
+              24°C
+            </div>
+
+            <div class="col">
+              Thursday
+              <div class="emoji">⛅️</div>
+              <div class="high">19°C</div>
+              15°C
+            </div>
+
+            <div class="col">
+              Friday
+              <div class="emoji">🌧</div>
+              <div class="high">15°C</div>
+              9°C
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <small>
+          <a href="https://github.com/hannahlouisaalexander/weather-app.git"
+            >Open-source code
+          </a>
+          by Hannah Alexander
+        </small>
+      </footer>
     </div>
-    <div class="high"> 21°C </div>
-    18°C
-  </div>
-
-
-  <div class="col">
-      Tuesday
-    <div class="emoji"> ☀️
-    </div>
-    <div class="high"> 26°C </div>
-    22°C
-  </div>
-
-
-  <div class="col">Wednesday 
-    <div class="emoji">☀️
-    </div>
-    <div class="high"> 27°C </div>
-    24°C
-  </div>
-
-
-  <div class="col">Thursday 
-      <div class="emoji">⛅️
-    </div>
-    <div class="high"> 19°C </div>
-    15°C
-  </div>
-
-
-  <div class="col">Friday 
-    <div class="emoji">🌧
-    </div>
-    <div class="high"> 15°C </div>
-    9°C
-  </div>
-</div>
-
-    </div>
-</div>
-</body>
-
-<footer>
-    <small> <a href="https://github.com/hannahlouisaalexander/weather-app.git">Open-source code </a> by Hannah Alexander 
-    </small
-    ></footer>
-</div>
-<script src="src/script.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>

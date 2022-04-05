@@ -34,15 +34,15 @@ footer {
   border-radius: 8px;
 }
 
-.weather-temperature .active {
+.weather-temperature a {
   color: black;
+  text-decoration: none;
   cursor: default;
 }
 
-.weather-temperature .active:hover {
+.weather-temperature a:hover {
   text-decoration: none;
 }
-  
 
 .high {
   font-weight: bolder;
