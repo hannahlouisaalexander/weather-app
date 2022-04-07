@@ -34,6 +34,31 @@ let displayCurrentTime = document.querySelector("#current-time");
 displayCurrentTime.innerHTML = `${hour}:${minute}`;
 formatDate();
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+      <div class="weather-forecast-date">${day}</div>
+      <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="google weather" width="42">
+      <div class="weather-forecast-temperature">
+        <span class="weather-forecast-temperature-max">18° </span><span class="weather-forecast-temperature-min">12°</span> 
+    </div>
+      </div>
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
 function displayWeather(response) {
   let forecastResult = Math.round(response.data.main.temp);
   let humidityValue = Math.round(response.data.main.humidity);
@@ -112,6 +137,7 @@ function getCelciusTemperature(event) {
   fahrenheitLink.classList.remove("active");
   temperature.innerHTML = Math.round(celciusTemperature);
 }
+
 let celciusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
@@ -121,3 +147,4 @@ let celsiusLink = document.querySelector("#celcius-link");
 celsiusLink.addEventListener("click", getCelciusTemperature);
 
 searchCity("Melbourne");
+displayForecast();
