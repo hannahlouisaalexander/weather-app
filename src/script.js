@@ -34,7 +34,8 @@ let displayCurrentTime = document.querySelector("#current-time");
 displayCurrentTime.innerHTML = `${hour}:${minute}`;
 formatDate();
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
 
   let days = ["Thu", "Fri", "Sat", "Sun"];
@@ -56,7 +57,14 @@ function displayForecast() {
 
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
-  console.log(forecastHTML);
+}
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "e20030b739fa4b57697d8d1509e9edd5";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayWeather(response) {
@@ -84,6 +92,7 @@ function displayWeather(response) {
   humidity.innerHTML = `Humidity: ${humidityValue} %`;
   wind.innerHTML = `Wind: ${windValue} m/s`;
   description.innerHTML = `Description: ${descriptionText}`;
+  getForecast(response.data.coord);
 }
 
 function searchCity(city) {
@@ -147,4 +156,3 @@ let celsiusLink = document.querySelector("#celcius-link");
 celsiusLink.addEventListener("click", getCelciusTemperature);
 
 searchCity("Melbourne");
-displayForecast();
