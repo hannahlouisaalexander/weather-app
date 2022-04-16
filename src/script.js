@@ -143,29 +143,4 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 // fahrenheit & celcius
 
-function getFahrenheitTemperature(event) {
-  event.preventDefault();
-  let temperature = document.querySelector("#temperature");
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
-  temperature.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function getCelciusTemperature(event) {
-  event.preventDefault();
-  let temperature = document.querySelector("#temperature");
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  temperature.innerHTML = Math.round(celciusTemperature);
-}
-
-let celciusTemperature = null;
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", getFahrenheitTemperature);
-
-let celsiusLink = document.querySelector("#celcius-link");
-celsiusLink.addEventListener("click", getCelciusTemperature);
-
 searchCity("Melbourne");
